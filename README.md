@@ -1,17 +1,18 @@
 # Stock-analysis
 ## Overview of Project
-  The purpose of this project was to generate, edit, and refactor VBA script for the Green Stocks dataset that helped us determine how well stocks performed in the past. Our goal was to generate a macro that looped through the data set by the click of a button to compare the stock tickers to their totaly daily volume and return rates. To acheive this, we used a combination of loops, If statements, static and conditional formatting, and more to generate a clean report for analysis.  
+  The purpose of this project was to generate, edit, and refactor VBA script for the Green Stocks dataset that helped us determine how well stocks performed in the past. Our goal was to generate a macro that looped through the data set by the click of a button to compare the stock tickers to their total daily volume and return rates. To achieve this, we used a combination of loops, If statements, static and conditional formatting, and more to generate a clean report for analysis.  
 ### Analysis and Challenges
 Our project was based on helping "Steve" create an analysis for his parents to determine how well Daquo Energy Corporation (DQ) performed in the past before they decided to invest their money. Aside from helping Steve with an analysis solely for DQ, we also created an analysis that compared other green energy corporations to DQ to get a better understanding of how well DQ stock performed. 
 The series of procedures were as followed:
 - Used the green stocks data to generate a report for DQ that calculated the yearly return for DQ in 2018 on the DQ Analysis tab in the Green_Stocks.xlsm file.
 - Created an analysis for all stocks to see if different stocks performed better than DQ on the All Stocks Analysis tab in the Green_Stocks.xlsm file.
 - Created buttons to run and clear the code we wrote for the analysis.
-
-Some of the challenges in this analysis were degbugging the macros and creating a clean readable VBA script. The debugging process required percise analysis of the code to determine where the errors were generating. Creating a clean and readable VBA script became much more clear in the refactoring stage of the analysis.
 - **Refactored the code in the VBA_Challenge.xlsm file to make the code more readable and efficient.**
+
+Some of the challenges in this analysis were debugging the macros and creating a clean readable VBA script. The debugging process required a precise analysis of the code to determine where the errors were generating. Creating a clean and readable VBA script became much clearer in the refactoring stage of the analysis.
+
 ## Results
-In terms of our refactoring reults, we started by copying the code for creating header rows, intializing arrays for tickers, activating the worksheet, and getting the number of rows to loop over. The refactoring steps and code (starting at 1a) were as follows:
+In terms of our refactoring results, we started by copying the code for creating header rows, initializing arrays for tickers, activating the worksheet, and getting the number of rows to loop over. The refactoring steps and code (starting at 1a) were as follows:
 
 
     Sub AllStocksAnalysisRefactored()
@@ -163,7 +164,7 @@ In terms of our refactoring reults, we started by copying the code for creating 
 ### 2018 Results
 <img src="https://user-images.githubusercontent.com/84201614/122683437-c858f380-d1c4-11eb-9ffa-c9e72e653eea.png" width="325" height="275">
 
-As we can see, DQ performed extremely well compared to the rest of the stocks in 2017 with a return rate of 199.4%, however, DQ experienced a large dip in 2018 with the lowest return rate of -62.6%. Steve's parents should be careful about investing all their money in Daquo energy based on these results. It would also be ebenficial to collect more data to see if there are additional trends to return on investment for DQ.
+As we can see, DQ performed extremely well compared to the rest of the stocks in 2017 with a return rate of 199.4%, however, DQ experienced a large dip in 2018 with the lowest return rate of -62.6%. Steve's parents should be careful about investing all their money in Daquo energy based on these results. It would be beneficial to collect more data to see if there are additional historical trends to return on investment for DQ.
 
 ## Summary
 
@@ -179,7 +180,7 @@ Disadvantages
 
 ### How do the advantages and disadvantages apply to the original VBA script?
 
-The refactored code was easier to follow especially with the comments showing what each step in the code was doing. It was also easier to debug based on the orderly steps. The macro run time in the refactored code was about 1 second faster than the original script with the run times below:
+The refactored code was easier to follow especially with the comments showing the code function for each step. It was also easier to debug based on the orderly steps. The macro run time in the refactored code was about 1 second faster than the original script with the run times below:
 
 <img src="https://user-images.githubusercontent.com/84201614/122684395-c7c35b80-d1ca-11eb-8984-a7d177731a83.png" width="415" height="225">
 
