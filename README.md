@@ -179,14 +179,10 @@ Disadvantages
 
 ### How do the advantages and disadvantages apply to the original VBA script?
 
-Based on the images below, the macro ran about 1 second faster for both 2017 and 2018 analysis.
+The refactored code was easier to follow especially with the comments showing what each step in the code was doing. It was also easier to debug based on the orderly steps. The macro run time in the refactored code was about 1 second faster than the original script with the run times below:
 
-Original script run time:
+<img src="https://user-images.githubusercontent.com/84201614/122684395-c7c35b80-d1ca-11eb-8984-a7d177731a83.png" width="415" height="225">
 
-2017
+<img src="https://user-images.githubusercontent.com/84201614/122684468-27216b80-d1cb-11eb-92ba-49c21c9c364d.png" width="415" height="225">
 
-<img src="https://user-images.githubusercontent.com/84201614/122683822-5c2bbf00-d1c7-11eb-8473-390fcfd7bd4d.png" width="350" height="200">
-
-2018
-
-<img src="https://user-images.githubusercontent.com/84201614/122683840-7fef0500-d1c7-11eb-8642-850374948c8f.png" width="350" height="200">
+Although the refactoring process was time consuming and created additional errors at first, the refactoring process made the code more efficient overall.
