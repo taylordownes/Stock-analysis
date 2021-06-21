@@ -2,7 +2,7 @@
 ## Overview of Project
   The purpose of this project was to generate, edit, and refactor VBA script for the Green Stocks dataset that helped us determine how well stocks performed in the past. Our goal was to generate a macro that looped through the data set by the click of a button to compare the stock tickers to their total daily volume and return rates. To achieve this, we used a combination of loops, If statements, static and conditional formatting, and more to generate a clean report for analysis.  
 ### Analysis and Challenges
-Our project was based on helping Steve create an analysis for his parents to determine how well Daquo Energy Corporation (DQ) performed historically before they decided to invest their money. In addition to helping Steve with a DQ analysis, we also created an analysis that compared other green energy corporations to DQ to gain perspective on how well DQ perfomed compared to the other companies.
+Our project was based on helping Steve create an analysis for his parents to determine how well Daquo Energy Corporation (DQ) performed historically before they decided to invest their money. In addition to helping Steve with a DQ analysis, we also created an analysis that compared other green energy corporations to DQ to gain a wider perspective on how well DQ perfomed.
 The series of procedures were as followed:
 - Used the green stocks data to generate a report for DQ that calculated the yearly return for DQ in 2018 on the DQ Analysis tab in the Green_Stocks.xlsm file.
 - Created an analysis for all stocks to see if different stocks performed better than DQ on the All Stocks Analysis tab in the Green_Stocks.xlsm file.
@@ -12,7 +12,7 @@ The series of procedures were as followed:
 Some of the challenges in this analysis were debugging the macros and creating a clean readable VBA script. The debugging process required a precise analysis of the code to determine where the errors were generating. Creating a clean and readable VBA script became much clearer in the refactoring stage of the analysis.
 
 ## Results
-In terms of our refactoring results, we started by copying the code for creating header rows, initializing arrays for tickers, activating the worksheet, and getting the number of rows to loop over. The refactoring steps and code (starting at 1a) were as follows:
+In terms of the refactoring results, we started by copying the code for creating header rows, initializing arrays for tickers, activating the worksheet, and getting the number of rows to loop over. The refactoring steps and code (starting at 1a) were as follows:
 
 
     Sub AllStocksAnalysisRefactored()
@@ -78,22 +78,18 @@ In terms of our refactoring results, we started by copying the code for creating
     ''2b) Loop over all the rows in the spreadsheet.
     
         For i = 2 To RowCount
-
     
         '3a) Increase volume for current ticker
         
             TickerVolumes(TickerIndex) = TickerVolumes(TickerIndex) + Cells(i, 8).Value
-            
             
         '3b) Check if the current row is the first row with the selected tickerIndex.
         'If  Then
             
             If Cells(i - 1, 1).Value <> tickers(TickerIndex) Then
             TickerStartingPrices(TickerIndex) = Cells(i, 6).Value
-            
-            
-            End If
-            
+             
+            End If  
             
         'End If
         
@@ -103,7 +99,6 @@ In terms of our refactoring results, we started by copying the code for creating
         
             If Cells(i + 1, 1).Value <> tickers(TickerIndex) Then
             TickerEndingPrices(TickerIndex) = Cells(i, 6).Value
-            
             
             '3d Increase the tickerIndex.
             
